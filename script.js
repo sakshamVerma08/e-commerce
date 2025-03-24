@@ -4,4 +4,6 @@ const toggleSidebar = () => {
   // write toggle code here.
 };
 
-sidebar.addEventListener(toggleSidebar);
+sidebar.addEventListener("onclick",()=>{
+  
+});
