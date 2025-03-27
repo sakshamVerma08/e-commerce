@@ -27,33 +27,65 @@
 
     <div id="main">
 
-        <nav class="bg-slate-400 flex justify-between h-12 w-screen">
-            <div class="w-1/4 bg-red-400">
-                <img class="w-10" src="./images/companyLogo.jpeg" alt="LOGO">
-            </div>
+        <nav class=" flex md:justify-around  items-center mt-8 h-12 w-screen">
 
-            <div id="sidebar" class="bg-blue-500 w-16 p-3 cursor-pointer">
+            <image src="./images/e-commerce-icon2.png" alt="shoppingIcon" class="h-16 w-24 rounded-xl m-3 border-2" />
 
-                <nav class=" shadow-lg">
-                    <input type="text" placeholder="Enter here" id="searchbar"
-                        class="top-16 text-black rounded-md bg-grey-400 decoration-2">
-
-
-                    <ul class="md:flex list-none md:justify-end md:items-center w-full">
-                        <li class="50px "><a href="#" class="h-full top-0 left3 md:flex items-center">Account</a></li>
-                        <li class="50px "><a href="#" class="h-full top-0 left3 md:flex items-center">Cart</a></li>
-
-                    </ul>
-                </nav>
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
+            <input type="checkbox" id="sidebar-active" class="md:hidden">
+            <label for="sidebar-active" class="open-sidebar-button"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 md:hidden">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
 
+            </label>
+
+
+            <div class="links-container h-full w-full flex flex-row items-center">
+                <label for="sidebar-active" class="close-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="size-8 md:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </label>
+
+                <div class="leftDiv mr-auto flex flex-row  items-center  w-full">
+                    <a class="home-link flex h-full hover:text-white px-6 py-2 items-center hover:bg-blue-700  rounded-md"
+                        href="#">Home</a>
+
+                    <input type="text" id="searchbar"
+                        class="bg-slate-300 rounded-md p-1 placeholder:text-gray-700 placeholder:font-normal w-full"
+                        placeholder="Search here">
+                </div>
+
+                <a class="flex  h-full hover:text-white px-6 py-2 items-center hover:bg-blue-700  rounded-md"
+                    href="#">Categories<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                <a class="flex  h-full hover:text-white px-6 py-2 items-center hover:bg-blue-700  rounded-md"
+                    href="#">What's New</a>
+
+                <a class="flex gap-3 h-full hover:text-white px-6 py-2 items-center hover:bg-blue-700  rounded-md"
+                    href="#">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                </a>
+                <a class="flex  h-full hover:text-white px-6 py-2 items-center hover:bg-blue-700  rounded-md" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+
+                    Cart</a>
             </div>
+
         </nav>
     </div>
 
